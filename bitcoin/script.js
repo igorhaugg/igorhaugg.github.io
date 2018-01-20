@@ -44,4 +44,3 @@ function uncheck(e) {
 bitbox.forEach(bit => bit.addEventListener('click', uncheck))
 
 window.onload = getBitcoinValue;
-/*window.onload = check;*/
