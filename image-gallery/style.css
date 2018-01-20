@@ -21,7 +21,7 @@ div.item {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 5px 5px;
   min-width: 220px;
   max-width: 310px;
   width: 100%;
@@ -59,26 +59,6 @@ div.item a {
   top: 0;
   bottom: 0;
   position: absolute;
-}
-
-div.item.blue {
-  background-color: #34495e;
-}
-div.item.blue i {
-  color: #34495e;
-}
-div.item.red {
-  background-color: #e74c3c;
-}
-div.item.red i {
-  color: #e74c3c;
-}
-
-div.item.green {
-  background-color: #16a085;
-}
-div.item.green i {
-  color: #16a085;
 }
 
 div.item:hover img {
