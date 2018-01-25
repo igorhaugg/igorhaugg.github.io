@@ -15,9 +15,9 @@ window.onload = function() {
       element.style.backgroundColor = color;
       insertElement(element, color);
     // }
-    // if (counter == limit){
-    //   clearInterval(looper);
-    // }
+    if (counter == limit){
+      clearInterval(looper);
+    }
   }, 1000);
 
 };
