@@ -3,13 +3,22 @@ window.onload = function() {
   const widthSize = document.getElementById("body").offsetWidth;
   const row = Math.floor(widthSize/310);
 
-  for (i = 0; i < row*3; i++) {
-    const element = document.createElement("div");
-    const color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    element.classList.add("item");
-    element.style.backgroundColor = color;
-    insertElement(element, color);
-  }
+  let counter = 0;
+  let limit = row*3;
+
+  var looper = setInterval(function(){
+      counter++;
+    // for (i = 0; i < row*3; i++) {
+      const element = document.createElement("div");
+      const color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+      element.classList.add("item");
+      element.style.backgroundColor = color;
+      insertElement(element, color);
+    // }
+    // if (counter == limit){
+    //   clearInterval(looper);
+    // }
+  }, 1000);
 
 };
 
