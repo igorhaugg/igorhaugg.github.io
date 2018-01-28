@@ -1,26 +1,24 @@
-header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-masthead.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   h1 {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
   }
-  h2 {
-    font-size: 1.3rem;
-    @include body-font;
-  }
-}
-@media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+  @media (min-width: 992px) {
+    height: 100vh;
     h1 {
-      font-size: 4.75em;
-      line-height: 4rem;
+      font-size: 5.5rem;
     }
-    h2 {
-      font-size: 1.75em;
-    }
-
   }
 }
