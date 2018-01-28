@@ -8,17 +8,15 @@ window.onload = function() {
 
   var looper = setInterval(function(){
       counter++;
-    // for (i = 0; i < row*3; i++) {
       const element = document.createElement("div");
       const color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
       element.classList.add("item");
       element.style.backgroundColor = color;
       insertElement(element, color);
-    // }
     if (counter == limit){
       clearInterval(looper);
     }
-  }, 1000);
+  }, 500);
 
 };
 
